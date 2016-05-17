@@ -10,6 +10,7 @@ Provide Unified Music Service for users in China.
 由于版权问题，QQ音乐、网易云等音乐平台有部分歌曲无法播放。**Project Israfil通过实现各大音乐平台的API来提供统一的音乐服务，消除因版权导致的不方便.**
 
 ## IN EARLY DEVELOPMENT  
+### 早期开发尚不可使用！
 Project Israfil只是本人的练笔之作，为了熟悉一下Go语言和Qt的开发，研究音乐平台协议只是顺手 ;)  
 如本项目有侵权行为，请和我联系，我会立刻删除Repo  
   
