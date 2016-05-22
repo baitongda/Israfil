@@ -62,9 +62,17 @@ string HttpClient::HttpGet(string url)
     return strret.str();
 }
 
-string HttpClient::HttpPost(string url, string data)
+string HttpClient::HttpPost(string url, postparams data)
 {
+    std::ostringstream strret;
+    curl_ios<std::ostringstream> writer(strret);
+    curl_easy curleasy(writer);
 
+    curleasy.add<CURLOPT_HTTPHEADER>(header.get());
+    curleasy.add<CURLOPT_URL>(url.data());
+    //curleasy.add<CURLOPT_HTTPPOST>
+    //
+    //TODO: add vector processing here
 }
 
 } // namespace Network

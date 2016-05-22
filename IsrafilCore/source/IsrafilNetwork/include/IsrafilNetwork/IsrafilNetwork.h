@@ -25,6 +25,9 @@ using curl::curlcpp_traceback;
 namespace Israfil{
 namespace Network{
 
+typedef postparam std::pair<string, string>;
+typedef postparams std::vector<postparam>;
+
 class ISRAFILNETWORK_API HttpClient
 {
 	public:
@@ -40,7 +43,7 @@ class ISRAFILNETWORK_API HttpClient
 		//curl_easy curleasy;
 	private:
 		curl_header header;
-		
+
 };
 /**
 *  @brief
