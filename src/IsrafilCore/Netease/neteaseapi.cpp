@@ -28,16 +28,17 @@ QString NeteaseAPI::testSearch()
     request->setMethod("POST");
     //request->setUrl(QUrl("http://music.163.com/api/search/get/"));
     QJsonObject object;
-    object["password"] = QJsonValue(QString("12345678"));
+    QString pswd = "12345678";
+    object["password"] = QJsonValue(QString(pswd.toUtf8().toBase64()));
 
     QJsonDocument doc;
     doc.setObject(object);
     request->setUrl(QUrl("http://localhost:9001"));
-    HttpBody *body = new HttpBody(doc.toJson());
+    //HttpBody *body = new HttpBody(doc.toJson());
     //HttpBody *body = new HttpBody(QString("s=回忆里的疯狂&limit=20&type=1&offset=0"));
     request->setBody(new HttpBody(doc.toJson()));
     HttpClient *client = new HttpClient();
-    HttpResponse *response = client->send(request);
+    HttpResponse *response = client->send(request);//client->send(request);
     return response->body()->toString();
 }
 
