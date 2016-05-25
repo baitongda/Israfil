@@ -1,0 +1,14 @@
+#define ISRAFILCORE_PROJECT_NAME        "IsrafilCore"
+#define ISRAFILCORE_PROJECT_DESCRIPTION "LER0ever Project Israfil Core Library"
+
+#define ISRAFILCORE_AUTHOR_ORGANIZATION "LER0ever"
+#define ISRAFILCORE_AUTHOR_DOMAIN       "http://etasry.ml"
+#define ISRAFILCORE_AUTHOR_MAINTAINER   "etasry@gmail.com"
+
+#define ISRAFILCORE_VERSION_MAJOR       "0"
+#define ISRAFILCORE_VERSION_MINOR       "1"
+#define ISRAFILCORE_VERSION_PATCH       "0"
+#define ISRAFILCORE_VERSION_REVISION    "000000000000"
+
+#define ISRAFILCORE_VERSION             "0.1.0"
+#define ISRAFILCORE_NAME_VERSION        "IsrafilCore v0.1.0 (000000000000)"
