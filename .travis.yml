@@ -37,7 +37,9 @@ install:
 
 
 script:
+    - cd HttpAPI
     - ./build.sh
+    - cd ..
 #    - echo "Building for ${MKSPEC} in ${BUILD_MODE} mode..."
 #    - mkdir build
 #    - cd build
