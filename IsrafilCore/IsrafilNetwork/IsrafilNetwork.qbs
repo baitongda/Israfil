@@ -29,7 +29,7 @@ DynamicLibrary {
 
     files: [
         "source/*.cpp",
-        "include/IsrafilCore/*.h",
+        "include/IsrafilNetwork/*.h",
         "../IsrafilPrefix/*.h"
     ]
 
