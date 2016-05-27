@@ -11,6 +11,7 @@ Project {
         "IsrafilBase/IsrafilBase.qbs",
         "IsrafilNetwork/IsrafilNetwork.qbs",
         "IsrafilCore/IsrafilCore.qbs",
-        "ext/curlcpp/curlcpp.qbs"
+        "ext/curlcpp/curlcpp.qbs",
+        "IsrafilMusic/IsrafilMusic.qbs"
     ]
 }

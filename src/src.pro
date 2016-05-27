@@ -1,7 +1,7 @@
 TEMPLATE = subdirs
 
-SUBDIRS += IsrafilCore plugins
-plugins.depends = IsrafilCore
+#SUBDIRS += IsrafilCore plugins
+#plugins.depends = IsrafilCore
 
 qtHaveModule(quick) {
     SUBDIRS += quick
