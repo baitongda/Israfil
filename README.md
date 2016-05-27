@@ -41,16 +41,14 @@ Israfil App: Qt, QML, Material Design, **超早期开发中**。
 ## Israfil编译
 ### 准备环境
 Windows: Qt官网(qt.io)下载Qt For Windows并安装  
-Linux: sudo $包管理安装命令 qt5-default (如```sudo apt-get install qt5-default```, ```sudo pacman -S qt5-default```)  
+Linux: sudo $包管理安装命令 qt5-default (如```sudo apt-get install qt5-default```, ```sudo pacman -S qt5```)  
 OS X: ```brew install qt5``` (需要手动加入环境变量) 或者官网下载安装包安装  
 ### 编译
 ```
 git clone https://github.com/LER0ever/Israfil
-cd Israfil && mkdir build && cd build
-qmake ..
-make # or mingw32-make on Windows
+cd Israfil && qbs build
 ```
-或者用Qt-Creator打开Israfil.pro，Release模式构建所有项目.  
+或者用Qt-Creator打开Israfil.qbs，Release模式构建所有项目.  
 
 ## Contributions are always welcome
 See [contribute.md](https://github.com/LER0ever/Israfil/blob/develop/doc/contribute.md)
