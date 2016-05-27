@@ -13,10 +13,11 @@ Provide Unified Music Service for users in China.
 ### 早期开发尚不可使用！
 Project Israfil只是本人的练笔之作，为了熟悉一下Go语言和Qt的开发，研究音乐平台协议只是顺手 ;)  
 如本项目有侵权行为，请和我联系，我会立刻删除Repo  
-  
-### About
-Israfil Core API: Go语言编写，Go-Pie插件机制，适合部署到服务器端提供统一的API  
-Israfil App: (不依赖Golang的CoreAPI) Qt, QML, Material Design, **早期开发中**。  
+
+## 关于这个项目
+Israfil HTTP API: (./HttpAPI)独立子项目，Go语言编写，Go-Pie插件机制，适合部署到服务器端提供统一的API **目前完成了网易和qq的搜索与下载地址获取，短期不更新**  
+IsrafilCore: (./IsrafilCore)C++11编写，提供音乐服务接口给IsrafilApp, **早期开发中**  
+Israfil App: Qt, QML, Material Design, **超早期开发中**。  
 
 ## Israfil 进度  
 | 协议       | 功能                                               | 完成情况 |
@@ -71,9 +72,8 @@ See [contribute.md](https://github.com/LER0ever/Israfil/blob/develop/doc/contrib
 | natefinch/pie          | MIT     | HttpAPI     | Embedded in source   |
 | ddliu/go-httpclient    | MIT     | HttpAPI     | Need manual go get   |
 | papyros/qml-material   | LGPL2   | IsrafilApp  | Embedded in source   |
-| fengleyl/NetEase       | MIT     | IsrafilApp  | Uses Part of Code    |
 | Qt Project             | LGPL2   | IsrafilApp  | Universal Dependency |
-| bidstack/bidstack-http | UNKNOWN | IsrafilApp  | Embedded in source   |
+| JosephP91/curlcpp | MIT | IsrafilCore  | Embedded in source   |
 
 网易云音乐API参考了[网易云音乐API分析](https://github.com/yanunon/NeteaseCloudMusic/wiki/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90API%E5%88%86%E6%9E%90)
 网易云音乐新版API正在学习中...  
