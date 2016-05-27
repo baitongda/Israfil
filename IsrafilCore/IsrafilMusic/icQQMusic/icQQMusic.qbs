@@ -16,9 +16,17 @@ Product {
     Depends {
         name: "IsrafilBase"
     }
+    Depends {
+        name: "curlcpp"
+    }
+    Depends {
+        name: "libcurl"
+    }
 
     cpp.includePaths: [
         "../../IsrafilPrefix",
+        "../../IsrafilNetwork/include",
+        "../../ext/curlcpp/include",
         "../../ext/rapidjson/include"
     ]
     cpp.cppFlags: [
@@ -26,6 +34,8 @@ Product {
     ]
 
     files: [
-        "base.h"
+        "base.h",
+        "qqmusic.cpp",
+        "qqmusic.h",
     ]
 }

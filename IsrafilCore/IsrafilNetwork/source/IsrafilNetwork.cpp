@@ -27,7 +27,8 @@ void HttpClient::printInfo()
     #else
         std::cout << "Library type: SHARED" << std::endl;
     #endif
-
+    std::cout<< "Headers: " << std::endl;
+    std::cout<< header.get() << std::endl;
     std::cout << std::endl;
 }
 

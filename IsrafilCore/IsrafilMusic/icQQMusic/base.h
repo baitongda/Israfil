@@ -1,4 +1,8 @@
-#include <cstring>
+#include <string>
+
+namespace Israfil{
+namespace QQMusic{
+using std::string;
 
 const string QMBase          = "music.qq.com";
 const string QMSearchBase    = "http://s." + QMBase;
@@ -22,3 +26,6 @@ const string QMLyricsURL     = "http://music.qq.com/miniportal/static/lyric/<0>/
 #define FMusicID 20
 #define FAlbumPicID 22
 #define DEBUG 1
+
+}
+}
