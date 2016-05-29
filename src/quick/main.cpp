@@ -8,7 +8,7 @@
 //#include "backendmodel.h"
 //#include "pluginloader.h"
 //#include "pluginmgr.h"
-#include "israfilcore.h"
+//#include "israfilcore.h"
 
 int main(int argc, char *argv[])
 {

@@ -7,11 +7,13 @@ DESTDIR = $$BUILD_TREE/bin
 
 INCLUDEPATH += \
     include \
-    ../IsrafilPrefix
+    ../IsrafilPrefix \
+    ../ext/rapidjson/include
 
 SOURCES += \
     source/IsrafilBase.cpp
 
 HEADERS += \
-    include/IsrafilBase/IsrafilBase.h
+    include/IsrafilBase/IsrafilBase.h \
+    include/IsrafilBase/songbase.h
 

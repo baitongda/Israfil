@@ -5,9 +5,10 @@
 #include <string>
 
 #include <IsrafilCore-api.h>
+#include "songbase.h"
 
-namespace baselib
-{
+namespace Israfil{
+namespace Base{
 
 
 /**
@@ -18,3 +19,4 @@ ISRAFILCORE_API void printInfo();
 
 
 } // namespace baselib
+} // namespace Israfil

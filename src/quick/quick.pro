@@ -9,9 +9,9 @@ SOURCES += main.cpp
 RESOURCES +=
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
-QML_IMPORT_PATH = C:/Users/etasr/Code/Qt/Israfil-Qt/src/quick
+#QML_IMPORT_PATH = C:/Users/etasr/Code/Qt/Israfil-Qt/src/quick
 
-israfilAddLibrary(IsrafilCore)
+#IsrafilAddLibrary(IsrafilCore)
 #include(../shared/shared.pri)
 include(deployment.pri)
 

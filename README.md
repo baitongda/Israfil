@@ -46,9 +46,11 @@ OS X: ```brew install qt5``` (需要手动加入环境变量) 或者官网下载
 ### 编译
 ```
 git clone https://github.com/LER0ever/Israfil
-cd Israfil && qbs build
+cd Israfil && mkdir build  
+cd build && qmake ..
+make
 ```
-或者用Qt-Creator打开Israfil.qbs，Release模式构建所有项目.  
+或者用Qt-Creator打开Israfil.pro，Release模式构建所有项目.  
 
 ## Contributions are always welcome
 See [contribute.md](https://github.com/LER0ever/Israfil/blob/develop/doc/contribute.md)

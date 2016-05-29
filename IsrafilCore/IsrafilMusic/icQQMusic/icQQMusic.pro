@@ -13,8 +13,10 @@ SOURCES += \
     qqmusic.cpp
 
 INCLUDEPATH += \
-    ../../IsrafilPrefix \
-    ../../IsrafilNetwork/include \
-    ../../ext/curlcpp/include
+    $$SOURCE_TREE/IsrafilCore/IsrafilPrefix \
+    $$SOURCE_TREE/IsrafilCore/IsrafilNetwork/include \
+    $$SOURCE_TREE/IsrafilCore/IsrafilBase/include \
+    $$SOURCE_TREE/IsrafilCore/ext/curlcpp/include \
+    $$SOURCE_TREE/IsrafilCore/ext/rapidjson/include
 
 LIBS += -L$$BUILD_TREE/bin -lcurl -lcurlcpp -lIsrafilNetwork

@@ -1,4 +1,5 @@
 #include "qqmusic.h"
+#include "rapidjson/document.h"
 
 namespace Israfil{
 namespace QQMusic{
@@ -15,9 +16,13 @@ QQMusic::QQMusic()
     hc->addHeader("Content-Type: application/x-www-form-urlencoded");
     hc->addHeader("Host: y.qq.com");
     hc->addHeader("Referer: y.qq.com");
-
 }
 
+vector<SongBase> QQMusic::SearchSong(string name)
+{
+    vector<SongBase> retVSB;
+
+}
 
 }
 }

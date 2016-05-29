@@ -1,2 +1,4 @@
 TEMPLATE = subdirs
-SUBDIRS += test-network
+SUBDIRS += \
+    test-network \
+    test-json

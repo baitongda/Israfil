@@ -6,10 +6,12 @@
 
 #include <IsrafilBase/IsrafilBase.h>
 
+//{ for needed start
+#include "rapidjson/document.h"
+//} end
 
-namespace baselib
-{
-
+namespace Israfil{
+namespace Base{
 
 void printInfo()
 {
@@ -56,3 +58,4 @@ void printInfo()
 
 
 } // namespace baselib
+} // namespace Israfil
