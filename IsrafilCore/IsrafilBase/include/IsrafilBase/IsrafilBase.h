@@ -6,6 +6,7 @@
 
 #include <IsrafilCore-api.h>
 #include "songbase.h"
+#include "strfmt.h"
 
 namespace Israfil{
 namespace Base{

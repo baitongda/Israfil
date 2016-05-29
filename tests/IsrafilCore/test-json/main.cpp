@@ -14,6 +14,8 @@
 
 using namespace Israfil::Base;
 
+const string qmsearchurl = "http://s.music.qq.com/fcgi-bin/music_search_new_platform?t=0&n={0}&aggr=1&cr=1&loginUin=0&format=json&inCharset=GB2312&outCharset=utf-8&notice=0&platform=jqminiframe.json&needNewCode=0&p=1&catZhida=0&remoteplace=sizer.newclient.next_song&w={1}";
+
 TEST_CASE("Israfil Json Tests - Simple", "Json") {
     using std::string;
     using std::ifstream;
@@ -113,4 +115,5 @@ TEST_CASE("Israfil Json Tests - Complex", "Json") {
     REQUIRE(list.IsArray() == true);
     psln(list.Size());
     REQUIRE(list.Size()+1 == song["curnum"].GetInt());
+    psln(Israfil::strfmt::Format(qmsearchurl,20,"SBA"));
 }

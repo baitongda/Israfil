@@ -15,5 +15,6 @@ SOURCES += \
 
 HEADERS += \
     include/IsrafilBase/IsrafilBase.h \
-    include/IsrafilBase/songbase.h
+    include/IsrafilBase/songbase.h \
+    include/IsrafilBase/strfmt.h
 

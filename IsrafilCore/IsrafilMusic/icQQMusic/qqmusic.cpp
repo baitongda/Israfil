@@ -1,3 +1,4 @@
+#include "stdio.h"
 #include "qqmusic.h"
 #include "rapidjson/document.h"
 
@@ -21,7 +22,9 @@ QQMusic::QQMusic()
 vector<SongBase> QQMusic::SearchSong(string name)
 {
     vector<SongBase> retVSB;
-
+    string SearchURL;
+    //sprintf()
+    //string rSongSearch = hc->HttpGet(sprintf());
 }
 
 }
