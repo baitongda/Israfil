@@ -21,10 +21,10 @@ QQMusic::QQMusic()
 
 vector<SongBase> QQMusic::SearchSong(string name)
 {
-    vector<SongBase> retVSB;
-    string SearchURL;
-    //sprintf()
-    //string rSongSearch = hc->HttpGet(sprintf());
+    vector<SongBase> rVecSongBase;
+    string rSongSearch = hc->HttpGet(Israfil::strfmt::Format(QMSearchURL, 20, name));
+    dbg(rSongSearch);
+    return rVecSongBase; //TODO: remove this;
 }
 
 }

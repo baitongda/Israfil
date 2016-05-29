@@ -8,6 +8,9 @@
 #include "songbase.h"
 #include "strfmt.h"
 
+#define dbg(x) std::cout << #x " = " << (x) << std::endl
+
+
 namespace Israfil{
 namespace Base{
 

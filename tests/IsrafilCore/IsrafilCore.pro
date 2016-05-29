@@ -1,4 +1,5 @@
 TEMPLATE = subdirs
 SUBDIRS += \
     test-network \
-    test-json
+    test-json \
+    test-qqmusic
