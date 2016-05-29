@@ -7,7 +7,7 @@ import (
 	"os"
     "runtime"
 
-	"github.com/LER0ever/Israfil/base"
+	"github.com/LER0ever/Israfil/HttpAPI/base"
 )
 
 //PLUGINPREFIX e.g. icpNetease
