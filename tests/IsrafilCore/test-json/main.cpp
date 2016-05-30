@@ -10,8 +10,6 @@
 #include <string>
 #include <cassert>
 
-#define psln(x) std::cout << #x " = " << (x) << std::endl
-
 using namespace Israfil::Base;
 
 const string qmsearchurl = "http://s.music.qq.com/fcgi-bin/music_search_new_platform?t=0&n={0}&aggr=1&cr=1&loginUin=0&format=json&inCharset=GB2312&outCharset=utf-8&notice=0&platform=jqminiframe.json&needNewCode=0&p=1&catZhida=0&remoteplace=sizer.newclient.next_song&w={1}";
@@ -38,7 +36,7 @@ TEST_CASE("Israfil Json Tests - Simple", "Json") {
     doc.Parse<0>(stringFromStream.c_str());
     if (doc.HasParseError()) {
         rapidjson::ParseErrorCode code = doc.GetParseError();
-        psln(code);
+        dbgerr(code);
         return;
     }
 
@@ -46,7 +44,7 @@ TEST_CASE("Israfil Json Tests - Simple", "Json") {
     using rapidjson::Value;
     Value & v = doc["dictVersion"];
     if (v.IsInt()) {
-        psln(v.GetInt());
+        dbg(v.GetInt());
         REQUIRE(v.GetInt() == 1);
     }
 
@@ -63,12 +61,12 @@ TEST_CASE("Israfil Json Tests - Simple", "Json") {
             ss>>str;
 
             if (v.HasMember("key") && v["key"].IsString()) {
-                psln(v["key"].GetString());
+                dbg(v["key"].GetString());
 
                 REQUIRE(v["key"].GetString() == "word"+str);
             }
             if (v.HasMember("value") && v["value"].IsString()) {
-                psln(v["value"].GetString());
+                dbg(v["value"].GetString());
                 REQUIRE(v["value"].GetString() == "单词"+str);
             }
         }
@@ -97,23 +95,23 @@ TEST_CASE("Israfil Json Tests - Complex", "Json") {
     doc.Parse<0>(stringFromStream.c_str());
     if (doc.HasParseError()) {
         rapidjson::ParseErrorCode code = doc.GetParseError();
-        psln(code);
+        dbg(code);
         return;
     }
 
     using rapidjson::Value;
     Value &retcode = doc["code"];
     if (retcode.IsInt()){
-        psln(retcode.GetInt());
+        dbg(retcode.GetInt());
         REQUIRE(retcode.GetInt() == 0);
     }
     Value &data = doc["data"];
-    psln(data["keyword"].GetString());
+    dbg(data["keyword"].GetString());
     //REQUIRE(data["keyword"].GetString() == "慕寒");
     Value &song = data["song"];
     Value &list = song["list"];
     REQUIRE(list.IsArray() == true);
-    psln(list.Size());
+    dbg(list.Size());
     REQUIRE(list.Size()+1 == song["curnum"].GetInt());
-    psln(Israfil::strfmt::Format(qmsearchurl,20,"SBA"));
+    dbg(Israfil::strfmt::Format(qmsearchurl,20,"SBA"));
 }

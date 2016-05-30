@@ -15,8 +15,9 @@ class QQMusic
 {
 public:
     QQMusic();
-    vector<SongBase> SearchSong(string name);
+    bool SearchSong(std::string name, std::vector<SongBase>& rVecSongBase);
 private:
+    bool SplitF(std::string FString, std::vector<std::string>& FArray);
     Israfil::Network::HttpClient *hc;
 
 };

@@ -40,9 +40,9 @@ script:
     - cd HttpAPI
     - ./build.sh
     - cd ..
-#    - echo "Building for ${MKSPEC} in ${BUILD_MODE} mode..."
-#    - mkdir build
-#    - cd build
-#    - qmake ../App/Israfil.pro -spec ${MKSPEC} CONFIG+=${BUILD_MODE}
-#    - make
+    - echo "Building for ${MKSPEC} in ${BUILD_MODE} mode..."
+    - mkdir build
+    - cd build
+    - qmake ../Israfil.pro -spec ${MKSPEC} CONFIG+=${BUILD_MODE}
+    - make
     - ls -lRa .

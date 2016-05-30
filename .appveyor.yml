@@ -1,7 +1,7 @@
 os: unstable
 #atrix:
 # - build: msvc2015
-#   QTDIR: 
+#   QTDIR:
 #   make: nmake release
 install:
 # - set QTDIR=C:\Qt\5.5\mingw492_32
@@ -12,23 +12,26 @@ build_script:
 # - '"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" x86'
  - md build-mingw
  - cd build-mingw
- - qmake ..\App\Israfil.pro
+ - qmake ..\Israfil.pro
  - mingw32-make
  - echo 'moving files to artifacts'
- - move lib\* bin\
- - cd bin
- - md plugins
- - cd ..
- - move plugins\* bin\plugins\
- - move tests bin
- - rd lib
- - rd plugins
- - rd /s /q src
+# - move lib\* bin\
+# - cd bin
+# - md plugins
+# - cd ..
+# - move plugins\* bin\plugins\
+# - move tests bin
+# - rd lib
+# - rd plugins
+# - rd /s /q src
    # - rd /s /q tests
- - del /q Makefile
- - ren bin Israfil  
+# - del /q Makefile
+ - ren bin Israfil
  - cd Israfil
  - windeployqt IsrafilApp.exe --qmldir C:\Qt\5.5\mingw492_32\qml
+ - windeployqt test-json.exe --qmldir C:\Qt\5.5\mingw492_32\qml
+ - windeployqt test-qqmusic.exe --qmldir C:\Qt\5.5\mingw492_32\qml
+ - windeployqt test-network.exe --qmldir C:\Qt\5.5\mingw492_32\qml
    # - cd release
 # - windeployqt --release HelloWorld.exe
 artifacts:
