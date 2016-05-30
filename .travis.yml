@@ -29,7 +29,7 @@ install:
     - if [ "${TRAVIS_OS_NAME}" = "linux" -a "${CXX}" = "g++" ]; then export MKSPEC=linux-g++; fi
 
     - if [ "${TRAVIS_OS_NAME}" = "osx" -a "${CXX}" = "clang++" ]; then export MKSPEC=macx-clang; fi
-    - if [ "${TRAVIS_OS_NAME}" = "osx" -a "${CXX}" = "g++" ]; then export MKSPEC=macx-g++; fi
+    - if [ "${TRAVIS_OS_NAME}" = "osx" -a "${CXX}" = "g++" ]; then exit; fi
 
 
 script:
