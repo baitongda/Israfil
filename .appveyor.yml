@@ -19,10 +19,8 @@ build_script:
 # - cd build
 # - cmake .. -G"MinGW Makefiles"
  - mingw32-make mingw32
- - xcopy include C:\Qt\Tools\mingw492_32\include /e
  - xcopy include C:\Qt\5.5\mingw492_32\include /e
- - xcopy lib C:\Qt\Tools\mingw492_32\lib /e
- - xcopy lib C:\Qt\5.5\mingw492_32\lib /e
+ - xcopy lib\libcurl.dll C:\Qt\5.5\mingw492_32\lib /e
  - cd ../
  - md build-mingw
  - cd build-mingw
