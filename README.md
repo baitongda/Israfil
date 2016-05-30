@@ -58,15 +58,12 @@ make
 See [contribute.md](https://github.com/LER0ever/Israfil/blob/develop/doc/contribute.md)
 
 ## CI Status  
-| Platform | Qt & Compiler     | Status                                                                                        |
-| :---:    | :---:             | :---:                                                                                         |
-| Linux    | 5.6 Clang         | ![traviscistatus](https://api.travis-ci.org/LER0ever/Israfil.svg)                             |
-| Linux    | 5.6 GCC           | ![traviscistatus](https://api.travis-ci.org/LER0ever/Israfil.svg)                             |
-| OS X     | 5.6 Clang         | ![traviscistatus](https://api.travis-ci.org/LER0ever/Israfil.svg)                             |
-| Windows  | 5.5 MinGW         | ![appvayorstatus](https://img.shields.io/badge/build-unknown-lightgrey.svg?style=flat-square) |
-| Windows  | 5.5 MSVC 2013 x86 | ![shield](https://img.shields.io/badge/build-unknown-lightgrey.svg?style=flat-square)         |
-| Windows  | 5.5 MSVC 2013 x64 | ![shield](https://img.shields.io/badge/build-unknown-lightgrey.svg?style=flat-square)         |
-(CI脚本待修复)  
+| Platform | Qt & Compiler       | Status                                                                                      |
+| :---:    | :---:               | :---:                                                                                       |
+| Linux    | 5.6 Clang & GCC     | ![traviscistatus](https://api.travis-ci.org/LER0ever/Israfil.svg)                           |
+| OS X     | 5.6 Clang & GCC     | ![traviscistatus](https://api.travis-ci.org/LER0ever/Israfil.svg)                           |
+| Windows  | 5.5 MinGW gcc       | ![appvayorstatus](https://ci.appveyor.com/api/projects/status/14ny9o50m4xb0c6g) |
+| Android  | 5.5 gcc androideabi | ![shield](https://img.shields.io/badge/build-unknown-lightgrey.svg?style=flat-square)       |
 
 ## Copyright
 | 3rd party              | License | Sub-Project | in source            |
