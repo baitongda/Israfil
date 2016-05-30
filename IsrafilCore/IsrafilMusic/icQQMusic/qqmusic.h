@@ -18,6 +18,7 @@ public:
     bool SearchSong(std::string name, std::vector<SongBase>& rVecSongBase);
 private:
     bool SplitF(std::string FString, std::vector<std::string>& FArray);
+    bool isAtString(std::string FAtString); //isAtString
     Israfil::Network::HttpClient *hc;
 
 };

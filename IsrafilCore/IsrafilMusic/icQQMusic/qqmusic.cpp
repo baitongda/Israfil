@@ -56,19 +56,31 @@ bool QQMusic::SearchSong(std::string name, std::vector<SongBase>& rVecSongBase)
         if (qlsGrp.Size() == 0) FString = qlSong["f"].GetString();
         else FString = qlsGrp[0]["f"].GetString();
         dbg(FString);
+
+        if (isAtString(FString) == true) continue; // it this is at string, then we dont use it
+
+        std::vector<std::string> FArray;
+        SplitF(FString, FArray);
+        dbg(FArray[FSongName]);
     }
 
     return true;
 }
 
+bool QQMusic::isAtString(std::string FAtString){
+    std::string FeatString = "@@@@";
+    std::string::size_type pos;
+    pos = FAtString.find(FeatString);
+    if (pos != FAtString.npos) return true;
+    else return false;
+}
+
 bool QQMusic::SplitF(std::string FString, std::vector<std::string> &FArray){
     std::stringstream ss(FString);
     std::string item;
-    std::vector<std::string> elems;
     while (std::getline(ss, item, '|')) {
-        elems.push_back(std::move(item));
+        FArray.push_back(std::move(item));
     }
-    FArray = elems;
 }
 
 }

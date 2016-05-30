@@ -12,5 +12,5 @@ using std::vector;
 TEST_CASE("Israfil::QQMusic Basic Tests - Search", "QQMusic") {
     vector<SongBase> ret;
     QQMusic *qm = new QQMusic();
-    qm->SearchSong("uptown", ret);
+    qm->SearchSong("光辉岁月", ret);
 }
