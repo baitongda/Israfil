@@ -19,7 +19,8 @@ build_script:
 # - cd build
 # - cmake .. -G"MinGW Makefiles"
  - mingw32-make mingw32
- - mingw32-make install
+ - move include\* C:\Qt\Tools\mingw492_32\include\
+ - move lib\* C:\Qt\Tools\mingw492_32\lib
  - cd ../../
  - md build-mingw
  - cd build-mingw
