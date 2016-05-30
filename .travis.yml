@@ -1,11 +1,11 @@
 sudo: required
 dist: trusty
-#language: cpp
-language: go
+language: cpp
+#language: go
 
-#compiler:
-#    - clang
-#    - gcc
+compiler:
+    - clang
+    - gcc
 
 os:
     - linux
@@ -15,8 +15,8 @@ go:
     - 1.6
 
 env:
-    #  - BUILD_MODE=release
-    #  - BUILD_MODE=debug
+  - BUILD_MODE=release
+  - BUILD_MODE=debug
   - "PATH=/home/travis/gopath/bin:$PATH"
 before_install:
     - go get github.com/ddliu/go-httpclient
