@@ -15,9 +15,9 @@ RESOURCES +=
 #include(../shared/shared.pri)
 include(deployment.pri)
 
-osx {
+#osx {
     # TODO
-    plugins.files += $$BUILD_TREE/plugins/libexampleplugin.$$QMAKE_EXTENSION_SHLIB
-    plugins.path = Contents/PlugIns
-    QMAKE_BUNDLE_DATA += plugins
-}
+#    plugins.files += $$BUILD_TREE/plugins/libexampleplugin.$$QMAKE_EXTENSION_SHLIB
+#    plugins.path = Contents/PlugIns
+#    QMAKE_BUNDLE_DATA += plugins
+#}
