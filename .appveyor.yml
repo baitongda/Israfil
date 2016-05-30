@@ -21,7 +21,7 @@ build_script:
  - mingw32-make mingw32
  - move include\* C:\Qt\Tools\mingw492_32\include\
  - move lib\* C:\Qt\Tools\mingw492_32\lib
- - cd ../../
+ - cd ../
  - md build-mingw
  - cd build-mingw
  - qmake ..\Israfil.pro
