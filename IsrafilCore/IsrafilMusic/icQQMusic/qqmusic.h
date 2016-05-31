@@ -11,7 +11,7 @@ namespace QQMusic{
 
 using Israfil::SongBase::SongBase;
 
-class QQMusic
+class ISRAFILCORE_API QQMusic
 {
 public:
     QQMusic();

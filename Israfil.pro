@@ -1,3 +1,3 @@
 TEMPLATE = subdirs
-SUBDIRS += IsrafilCore src tests
+SUBDIRS += IsrafilCore IsrafilApp tests
 CONFIG += C++11

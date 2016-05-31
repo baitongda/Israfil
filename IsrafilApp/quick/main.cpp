@@ -5,6 +5,7 @@
 
 #include <QDebug>
 
+//#include "../Material/src/plugin.h"
 //#include "backendmodel.h"
 //#include "pluginloader.h"
 //#include "pluginmgr.h"
@@ -16,8 +17,20 @@ int main(int argc, char *argv[])
 
     //qmlRegisterType<BackendModel>("qtmpl", 1, 0, "BackendModel");
 
-    //QQmlApplicationEngine engine;
+    QQmlApplicationEngine engine(&app);
 
+    /// QML Import Path {
+    engine.addImportPath("qrc:///");
+    engine.addImportPath("qrc:/Material");
+    engine.addImportPath("qrc:/QtQuick");
+    engine.addImportPath("qrc:/QtQuick/Controls/Styles/Material");
+    /// }
+    /// {
+    //MaterialPlugin qmlMaterial;
+    //qmlMaterial.registerTypes("Material");
+    /// }
+
+    engine.load(QUrl(QStringLiteral("qrc:/qml/main.qml")));
     //QStringList plugins;
     //IsrafilCore *pIC = new IsrafilCore();
     //PluginMgr plmgr;
@@ -30,15 +43,7 @@ int main(int argc, char *argv[])
     //SongList *tmpSL = new SongList();
     //tmpSL = pIC->SearchByName("test");
     //qDebug() << tmpSL->at(0).UID <<endl;
-    /// QML Import Path {
-    /*
-    engine.addImportPath("qrc:/");
-    engine.addImportPath("qrc:/Material");
-    engine.addImportPath("qrc:/QtQuick");
-    engine.addImportPath("qrc:/QtQuick/Controls/Styles/Material");
-    engine.load(QUrl(QStringLiteral("qrc:/qml/main.qml")));
-    */
-    /// }
+
 
     return app.exec();
 }
