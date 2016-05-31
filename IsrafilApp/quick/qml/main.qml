@@ -12,7 +12,7 @@ ApplicationWindow {
         lineHeight: 2;
         horizontalAlignment: Text.AlignHCenter;
         verticalAlignment: Text.AlignVCenter;
-        text: 'Stay Tunned!';
+        text: 'Stay Tuned!';
         anchors.centerIn: parent;
     }
 
