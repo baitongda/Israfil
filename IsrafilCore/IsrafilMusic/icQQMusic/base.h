@@ -21,6 +21,7 @@ const string QMLyricsURL     = "http://music.qq.com/miniportal/static/lyric/{0}/
 #define FSongID 0
 #define FSongName 1
 #define FSingerID 2
+#define FSingerName 3
 #define FAlbumID 4
 #define FAlbumName 5
 #define FMusicID 20

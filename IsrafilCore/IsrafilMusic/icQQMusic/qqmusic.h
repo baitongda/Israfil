@@ -10,6 +10,7 @@ namespace Israfil{
 namespace QQMusic{
 
 using Israfil::SongBase::SongBase;
+using Israfil::SongBase::Musician;
 
 class ISRAFILCORE_API QQMusic
 {

@@ -30,7 +30,7 @@ struct SongBase{
     Album sAlbum;
     vector<string> Mp3URL; //Mp3URL[0] is the highest bitrate
     vector<string> PicURL;
-
+    string DevString;
 };
 
 }

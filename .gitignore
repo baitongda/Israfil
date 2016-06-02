@@ -1,6 +1,7 @@
 *.exe
 build*/
 *.user
+*.pro.user.*
 *.exe
 /icpNetease
 /icpQQMusic

@@ -15,21 +15,22 @@ Project Israfil只是本人的练笔之作，为了熟悉一下Go语言和Qt的�
 如本项目有侵权行为，请和我联系，我会立刻删除Repo  
 
 ## 关于这个项目
-Israfil HTTP API: (./HttpAPI)独立子项目，Go语言编写，Go-Pie插件机制，适合部署到服务器端提供统一的API **目前完成了网易和qq的搜索与下载地址获取，短期不更新**  
 IsrafilCore: (./IsrafilCore)C++11编写，提供音乐服务接口给IsrafilApp, **早期开发中**  
 Israfil App: Qt, QML, Material Design, **超早期开发中**。  
+_Israfil HTTP API: (./HttpAPI)独立子项目，Go语言编写，Go-Pie插件机制，适合部署到服务器端提供统一的API **目前完成了网易和qq的搜索与下载地址获取，短期不更新**_
 
 ## Israfil 进度  
-| 项目    | 协议       | 已完成               |
-| :---:   | :---:      | :---:                |
-| HTTPAPI | 网易云音乐 | 搜索歌曲获得下载链接 |
-| HTTPAPI | QQ音乐     | 搜索歌曲获得下载链接 |
+| 项目        | 协议       | 已完成                       | 测试         |
+| :---:       | :---:      | :---:                        | :---:        |
+| IsrafilCore | HTTPClient | 自定义header发送GET/POST请求 | test-network |
+| IsrafilCore | QQ音乐     | 搜索歌曲获得下载链接         | test-qqmusic |
+| HTTPAPI     | 网易云音乐 | 搜索歌曲获得下载链接         | -            |
+| HTTPAPI     | QQ音乐     | 搜索歌曲获得下载链接         | -            |
 
 | 项目        | 协议       | 功能                                               | 完成情况 |
 | :---:       | :---:      | :---:                                              | :---:    |
-| IsrafilCore | QQ音乐     | 搜索歌曲                                           | 30%      |
+| IsrafilCore | 网易云音乐 | 搜索歌曲                                           | 30%      |
 | IsrafilCore | 虾米音乐   | 协议研究                                           | 60%      |
-| IsrafilCore | 百度音乐   | 公开协议，播放限制                                 | 100%     |
 | IsrafilAPP  | UI         | qml-material 初步界面demo 及 qml文件的资源打包     | 60%      |
 | HTTPAPI     | Universal  | **已经可以搜索网易和QQ音乐的详细信息**             | 80%      |
 | HTTPAPI     | 网易云音乐 | 通过歌曲ID获得各个清晰度的DFSID                    | 100%     |
@@ -66,13 +67,13 @@ See [contribute.md](https://github.com/LER0ever/Israfil/blob/develop/doc/contrib
 | Android  | 5.5 gcc androideabi | ![shield](https://img.shields.io/badge/build-unknown-lightgrey.svg?style=flat-square)       |
 
 ## Copyright
-| 3rd party              | License | Sub-Project | in source            |
-| :---:                  | :---:   | :---:       | :---:                |
-| natefinch/pie          | MIT     | HttpAPI     | Embedded in source   |
-| ddliu/go-httpclient    | MIT     | HttpAPI     | Need manual go get   |
-| papyros/qml-material   | LGPL2   | IsrafilApp  | Embedded in source   |
-| Qt Project             | LGPL2   | IsrafilApp  | Universal Dependency |
-| JosephP91/curlcpp | MIT | IsrafilCore  | Embedded in source   |
+| 3rd party            | License | Sub-Project | in source            |
+| :---:                | :---:   | :---:       | :---:                |
+| papyros/qml-material | LGPL2   | IsrafilApp  | Embedded in source   |
+| Qt Project           | LGPL2   | IsrafilApp  | Universal Dependency |
+| JosephP91/curlcpp    | MIT     | IsrafilCore | Embedded in source   |
+| natefinch/pie        | MIT     | HttpAPI     | Embedded in source   |
+| ddliu/go-httpclient  | MIT     | HttpAPI     | Need manual go get   |
 
 网易云音乐API参考了[网易云音乐API分析](https://github.com/yanunon/NeteaseCloudMusic/wiki/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90API%E5%88%86%E6%9E%90)
 网易云音乐新版API正在学习中...  

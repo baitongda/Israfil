@@ -53,15 +53,33 @@ bool QQMusic::SearchSong(std::string name, std::vector<SongBase>& rVecSongBase)
         dbg(qlsGrp.IsArray());
         dbg(qlsGrp.Size());
         std::string FString;
-        if (qlsGrp.Size() == 0) FString = qlSong["f"].GetString();
-        else FString = qlsGrp[0]["f"].GetString();
+        //if (qlsGrp.Size() == 0) FString = qlSong["f"].GetString();
+        //else FString = qlsGrp[0]["f"].GetString();
+
+        FString = qlSong["f"].GetString();
+        if (isAtString(FString) == true) continue; // it this is at string, then we dont use it
         dbg(FString);
 
-        if (isAtString(FString) == true) continue; // it this is at string, then we dont use it
+
 
         std::vector<std::string> FArray;
         SplitF(FString, FArray);
         dbg(FArray[FSongName]);
+
+
+        SongBase tmpSB;
+        tmpSB.sName = FArray[FSongName];
+        tmpSB.sID = FArray[FSongID];
+        tmpSB.DevString = FString;
+        tmpSB.Mp3URL.push_back(Israfil::strfmt::Format(QMHighMp3URL, tmpSB.sID));
+
+        Musician tmpMSC;
+        tmpMSC.mID = FArray[FSingerID];
+        tmpMSC.mName = FArray[FSingerName];
+
+        tmpSB.sSingers.push_back(tmpMSC);
+
+        rVecSongBase.push_back(tmpSB);
     }
 
     return true;
