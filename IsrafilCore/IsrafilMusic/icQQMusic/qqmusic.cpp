@@ -72,11 +72,16 @@ bool QQMusic::SearchSong(std::string name, std::vector<SongBase>& rVecSongBase)
         tmpSB.sID = FArray[FSongID];
         tmpSB.DevString = FString;
         tmpSB.Mp3URL.push_back(Israfil::strfmt::Format(QMHighMp3URL, tmpSB.sID));
+        tmpSB.LyricsURL.push_back(Israfil::strfmt::Format(QMLyricsURL, StringToInt(tmpSB.sID)%100, tmpSB.sID));
+        tmpSB.PicURL.push_back(Israfil::strfmt::Format(QMSongPicURL, FArray[FSongPicID].at(FArray[FSongPicID].length()-2),FArray[FSongPicID].at(FArray[FSongPicID].length()-1), FArray[FSongPicID]));
+
+        tmpSB.sAlbum.aID = FArray[FAlbumID];
+        tmpSB.sAlbum.aName = FArray[FAlbumName];
+        tmpSB.sAlbum.aPicURL = Israfil::strfmt::Format(QMAlbumPicURL, StringToInt(tmpSB.sAlbum.aID)%100, tmpSB.sAlbum.aID);
 
         Musician tmpMSC;
         tmpMSC.mID = FArray[FSingerID];
         tmpMSC.mName = FArray[FSingerName];
-
         tmpSB.sSingers.push_back(tmpMSC);
 
         rVecSongBase.push_back(tmpSB);
@@ -93,12 +98,20 @@ bool QQMusic::isAtString(std::string FAtString){
     else return false;
 }
 
-bool QQMusic::SplitF(std::string FString, std::vector<std::string> &FArray){
+void QQMusic::SplitF(std::string FString, std::vector<std::string> &FArray){
     std::stringstream ss(FString);
     std::string item;
     while (std::getline(ss, item, '|')) {
         FArray.push_back(std::move(item));
     }
+}
+
+int QQMusic::StringToInt(std::string Str) {
+    std::stringstream ss;
+    int num;
+    ss<<Str;
+    ss>>num;
+    return num;
 }
 
 }

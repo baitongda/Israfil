@@ -23,6 +23,7 @@ _Israfil HTTP API: (./HttpAPI)独立子项目，Go语言编写，Go-Pie插件机
 | 项目        | 协议       | 已完成                       | 测试         | 完成时间   |
 | :---:       | :---:      | :---:                        | :---:        | :---:      |
 | IsrafilCore | HTTPClient | 自定义header发送GET/POST请求 | test-network | 2016-05-28 |
+| IsrafilCore | QQ音乐     | 获得歌曲歌词和专辑图片       | test-qqmusic | 2016-06-02 |
 | IsrafilCore | QQ音乐     | 搜索歌曲获得下载链接         | test-qqmusic | 2016-06-02 |
 | HTTPAPI     | 网易云音乐 | 搜索歌曲获得下载链接         | -            | 2016-04-15 |
 | HTTPAPI     | QQ音乐     | 搜索歌曲获得下载链接         | -            | 2016-04-15 |

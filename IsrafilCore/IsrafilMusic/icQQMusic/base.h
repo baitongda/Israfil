@@ -15,7 +15,8 @@ const string QMFlacURL       = QMStreamURL + "/F000{0}.flac"; //mid
 const string QMApeURL        = QMStreamURL + "/A000{0}.ape";  //mid
 const string QMSongURL       = "http://y.qq.com/#type=song&mid={0}&tpl=yqq_song_detail";
 const string QMSongDetailURL = "http://s.plcloud.music.qq.com/fcgi-bin/fcg_list_songinfo.fcg?idlist={0}&callback=jsonCallback&url=1";
-const string QMAlbumPicURL   = "http://i.gtimg.cn/music/photo/mid_album_300/{0}/{1}/{2}.jpg";
+const string QMSongPicURL   = "http://i.gtimg.cn/music/photo/mid_album_300/{0}/{1}/{2}.jpg";
+const string QMAlbumPicURL = "http://imgcache.qq.com/music/photo/album/{0}/albumpic_{1}_0.jpg";
 const string QMLyricsURL     = "http://music.qq.com/miniportal/static/lyric/{0}/{1}.xml"; //TODO: replace params
 
 #define FSongID 0
@@ -25,7 +26,7 @@ const string QMLyricsURL     = "http://music.qq.com/miniportal/static/lyric/{0}/
 #define FAlbumID 4
 #define FAlbumName 5
 #define FMusicID 20
-#define FAlbumPicID 22
+#define FSongPicID 22
 #define DEBUG 1
 
 }
