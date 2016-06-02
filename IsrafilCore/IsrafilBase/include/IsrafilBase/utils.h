@@ -59,14 +59,7 @@ namespace Base{
 
 
 
-ISRAFILCORE_API int StringToInt(std::string Str) {
-    std::stringstream ss;
-    int num;
-    ss<<Str;
-    ss>>num;
-    return num;
-}
-
+ISRAFILCORE_API int StringToInt(std::string Str);
 
 
 }

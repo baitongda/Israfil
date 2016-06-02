@@ -1,5 +1,6 @@
 import QtQuick 2.0
 import QtQuick.Controls 1.0
+import IsrafilCore 1.0
 
 ApplicationWindow {
     visible: true;
@@ -14,6 +15,14 @@ ApplicationWindow {
         verticalAlignment: Text.AlignVCenter;
         text: 'Stay Tuned!';
         anchors.centerIn: parent;
+    }
+
+    IsrafilCoreQt {
+        id: israfilqt
+    }
+
+    Text {
+
     }
 
 }

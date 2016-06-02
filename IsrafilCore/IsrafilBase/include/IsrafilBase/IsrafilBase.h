@@ -21,6 +21,5 @@ namespace Base{
 */
 ISRAFILCORE_API void printInfo();
 
-
 } // namespace baselib
 } // namespace Israfil

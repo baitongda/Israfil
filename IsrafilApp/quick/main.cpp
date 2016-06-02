@@ -10,15 +10,16 @@
 //#include "pluginloader.h"
 //#include "pluginmgr.h"
 //#include "israfilcore.h"
+#include "israfilcoreqt.h"
 
 int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
 
-    //qmlRegisterType<BackendModel>("qtmpl", 1, 0, "BackendModel");
+    //qmlRegisterType<BackendModel>("israfil", 1, 0, "BackendModel");
 
     QQmlApplicationEngine engine(&app);
-
+    qmlRegisterType<IsrafilCoreQt>("IsrafilCore",1,0,"IsrafilCoreQt");
     /// QML Import Path {
     engine.addImportPath("qrc:///");
     engine.addImportPath("qrc:/Material");

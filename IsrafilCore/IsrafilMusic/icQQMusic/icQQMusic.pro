@@ -19,4 +19,4 @@ INCLUDEPATH += \
     $$SOURCE_TREE/IsrafilCore/ext/curlcpp/include \
     $$SOURCE_TREE/IsrafilCore/ext/rapidjson/include
 
-LIBS += -L$$BUILD_TREE/bin -lcurl -lcurlcpp -lIsrafilNetwork
+LIBS += -L$$BUILD_TREE/bin -lcurl -lcurlcpp -lIsrafilNetwork -lIsrafilBase

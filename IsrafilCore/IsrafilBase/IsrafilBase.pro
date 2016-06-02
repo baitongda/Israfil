@@ -11,7 +11,8 @@ INCLUDEPATH += \
     ../ext/rapidjson/include
 
 SOURCES += \
-    source/IsrafilBase.cpp
+    source/IsrafilBase.cpp \
+    source/utils.cpp
 
 HEADERS += \
     include/IsrafilBase/IsrafilBase.h \
