@@ -2,9 +2,15 @@ TEMPLATE = subdirs
 SUBDIRS += \
     ext/curlcpp \
     IsrafilNetwork \
-    IsrafilCore \
     IsrafilBase \
-    IsrafilMusic
+    IsrafilMusic \
+    IsrafilCore \
 
 IsrafilNetwork.depends = curlcpp
 IsrafilNetwork.depends = IsrafilBase
+
+IsrafilCore.depends = icQQMusic
+IsrafilCore.depends = IsrafilBase
+IsrafilCore.depends = IsrafilNetwork
+
+
