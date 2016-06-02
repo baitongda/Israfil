@@ -20,27 +20,31 @@ Israfil App: Qt, QML, Material Design, **超早期开发中**。
 _Israfil HTTP API: (./HttpAPI)独立子项目，Go语言编写，Go-Pie插件机制，适合部署到服务器端提供统一的API **目前完成了网易和qq的搜索与下载地址获取，短期不更新**_
 
 ## Israfil 进度  
-| 项目        | 协议       | 已完成                       | 测试         | 完成时间   |
-| :---:       | :---:      | :---:                        | :---:        | :---:      |
-| IsrafilCore | HTTPClient | 自定义header发送GET/POST请求 | test-network | 2016-05-28 |
-| IsrafilCore | QQ音乐     | 获得歌曲歌词和专辑图片       | test-qqmusic | 2016-06-02 |
-| IsrafilCore | QQ音乐     | 搜索歌曲获得下载链接         | test-qqmusic | 2016-06-02 |
-| HTTPAPI     | 网易云音乐 | 搜索歌曲获得下载链接         | -            | 2016-04-15 |
-| HTTPAPI     | QQ音乐     | 搜索歌曲获得下载链接         | -            | 2016-04-15 |
+已完成:  
 
-| 项目        | 协议       | 功能                                               | 完成情况 |
-| :---:       | :---:      | :---:                                              | :---:    |
-| IsrafilCore | 网易云音乐 | 搜索歌曲                                           | 30%      |
-| IsrafilCore | 虾米音乐   | 协议研究                                           | 60%      |
-| IsrafilAPP  | UI         | qml-material 初步界面demo 及 qml文件的资源打包     | 60%      |
-| HTTPAPI     | Universal  | **已经可以搜索网易和QQ音乐的详细信息**             | 80%      |
-| HTTPAPI     | 网易云音乐 | 通过歌曲ID获得各个清晰度的DFSID                    | 100%     |
-| HTTPAPI     | 网易云音乐 | 通过歌曲ID获取歌手信息，头像，歌手ID               | 100%     |
-| HTTPAPI     | 网易云音乐 | 通过歌曲ID，获取专辑信息，图片，ID                 | 100%     |
-| HTTPAPI     | 网易云音乐 | **通过歌曲DFSID计算出各个清晰度MP3绝对链接地址**   | 100%     |
-| HTTPAPI     | 网易云音乐 | 搜索歌曲，获得歌曲ID列表                           | 80%      |
-| HTTPAPI     | QQ音乐     | 搜索歌曲，获得歌曲SID列表                          | 60 %     |
-| HTTPAPI     | QQ音乐     | **通过SID计算音乐文件下载路径，包括无损Flac、APE** | 100%     |
+| 项目        | 协议       | 已完成                                             | 测试         | 完成时间   |
+| :---:       | :---:      | :---:                                              | :---:        | :---:      |
+| IsrafilCore | Universal  | 封装QQ搜索至IsrafilCore                            | test-core    | 2016-06-02 |
+| IsrafilCore | QQ音乐     | 获得歌曲歌词和专辑图片                             | test-qqmusic | 2016-06-02 |
+| IsrafilCore | QQ音乐     | 搜索歌曲获得下载链接                               | test-qqmusic | 2016-06-02 |
+| IsrafilCore | HTTPClient | 自定义header发送GET/POST请求                       | test-network | 2016-05-28 |
+| HTTPAPI     | 网易云音乐 | 搜索歌曲获得下载链接                               | -            | 2016-04-15 |
+| HTTPAPI     | QQ音乐     | 搜索歌曲获得下载链接                               | -            | 2016-04-15 |
+进行中:  
+
+| 项目        | 协议       | 功能                                               | 完成情况     |
+| :---:       | :---:      | :---:                                              | :---:        |
+| IsrafilCore | 网易云音乐 | 搜索歌曲                                           | 30%          |
+| IsrafilCore | 虾米音乐   | 协议研究                                           | 60%          |
+| IsrafilAPP  | UI         | qml-material 初步界面demo 及 qml文件的资源打包     | 60%          |
+| HTTPAPI     | Universal  | **已经可以搜索网易和QQ音乐的详细信息**             | 80%          |
+| HTTPAPI     | 网易云音乐 | 通过歌曲ID获得各个清晰度的DFSID                    | 100%         |
+| HTTPAPI     | 网易云音乐 | 通过歌曲ID获取歌手信息，头像，歌手ID               | 100%         |
+| HTTPAPI     | 网易云音乐 | 通过歌曲ID，获取专辑信息，图片，ID                 | 100%         |
+| HTTPAPI     | 网易云音乐 | **通过歌曲DFSID计算出各个清晰度MP3绝对链接地址**   | 100%         |
+| HTTPAPI     | 网易云音乐 | 搜索歌曲，获得歌曲ID列表                           | 80%          |
+| HTTPAPI     | QQ音乐     | 搜索歌曲，获得歌曲SID列表                          | 60 %         |
+| HTTPAPI     | QQ音乐     | **通过SID计算音乐文件下载路径，包括无损Flac、APE** | 100%         |
 
 ## Israfil编译
 ### 准备环境

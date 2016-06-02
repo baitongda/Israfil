@@ -19,7 +19,7 @@ QQMusic::QQMusic()
     hc->addHeader("Referer: y.qq.com");
 }
 
-bool QQMusic::SearchSong(std::string name, std::vector<SongBase>& rVecSongBase)
+bool QQMusic::SearchSong(std::string name, std::vector<Song>& rVecSongBase)
 {
     //vector<SongBase> rVecSongBase;
     std::string rSongSearch = hc->HttpGet(Israfil::strfmt::Format(QMSearchURL, 20, name));
@@ -67,13 +67,16 @@ bool QQMusic::SearchSong(std::string name, std::vector<SongBase>& rVecSongBase)
         dbg(FArray[FSongName]);
 
 
-        SongBase tmpSB;
+        Song tmpSB;
         tmpSB.sName = FArray[FSongName];
         tmpSB.sID = FArray[FSongID];
         tmpSB.DevString = FString;
         tmpSB.Mp3URL.push_back(Israfil::strfmt::Format(QMHighMp3URL, tmpSB.sID));
         tmpSB.LyricsURL.push_back(Israfil::strfmt::Format(QMLyricsURL, StringToInt(tmpSB.sID)%100, tmpSB.sID));
         tmpSB.PicURL.push_back(Israfil::strfmt::Format(QMSongPicURL, FArray[FSongPicID].at(FArray[FSongPicID].length()-2),FArray[FSongPicID].at(FArray[FSongPicID].length()-1), FArray[FSongPicID]));
+
+        tmpSB.sSource = srcQQMusic;
+        tmpSB.sOnly = qlSong["only"].GetInt() == 1 ? true : false;
 
         tmpSB.sAlbum.aID = FArray[FAlbumID];
         tmpSB.sAlbum.aName = FArray[FAlbumName];
@@ -104,14 +107,6 @@ void QQMusic::SplitF(std::string FString, std::vector<std::string> &FArray){
     while (std::getline(ss, item, '|')) {
         FArray.push_back(std::move(item));
     }
-}
-
-int QQMusic::StringToInt(std::string Str) {
-    std::stringstream ss;
-    int num;
-    ss<<Str;
-    ss>>num;
-    return num;
 }
 
 }

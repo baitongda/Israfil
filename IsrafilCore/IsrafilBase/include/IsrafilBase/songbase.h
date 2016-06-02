@@ -9,6 +9,11 @@ using std::vector;
 namespace Israfil{
 namespace SongBase{
 
+#define srcNetease 1
+#define srcQQMusic 2
+#define srcXiami 3
+#define srcKugou 4
+
 struct Musician{ //Artists
     string mName;
     string mID;
@@ -23,11 +28,13 @@ struct Album{
     Musician aSinger;
 };
 
-struct SongBase{
+struct Song{
     string sName;
     string sID;
     vector<Musician> sSingers;
     Album sAlbum;
+    int sSource;
+    bool sOnly;
     vector<string> Mp3URL; //Mp3URL[0] is the highest bitrate
     vector<string> PicURL;
     vector<string> LyricsURL;

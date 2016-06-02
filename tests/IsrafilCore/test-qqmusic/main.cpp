@@ -12,7 +12,7 @@ using std::vector;
 
 
 TEST_CASE("Israfil::QQMusic Basic Tests - Search", "QQMusic") {
-    vector<SongBase> ret;
+    vector<Song> ret;
     QQMusic *qm = new QQMusic();
     std::string SearchNameInput;
     std::cout<< "Don\'t run inside Qt Creator!"<< std::endl << "Input the name you wonna search" << std::endl;
