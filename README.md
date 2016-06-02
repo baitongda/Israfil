@@ -20,12 +20,12 @@ Israfil App: Qt, QML, Material Design, **超早期开发中**。
 _Israfil HTTP API: (./HttpAPI)独立子项目，Go语言编写，Go-Pie插件机制，适合部署到服务器端提供统一的API **目前完成了网易和qq的搜索与下载地址获取，短期不更新**_
 
 ## Israfil 进度  
-| 项目        | 协议       | 已完成                       | 测试         |
-| :---:       | :---:      | :---:                        | :---:        |
-| IsrafilCore | HTTPClient | 自定义header发送GET/POST请求 | test-network |
-| IsrafilCore | QQ音乐     | 搜索歌曲获得下载链接         | test-qqmusic |
-| HTTPAPI     | 网易云音乐 | 搜索歌曲获得下载链接         | -            |
-| HTTPAPI     | QQ音乐     | 搜索歌曲获得下载链接         | -            |
+| 项目        | 协议       | 已完成                       | 测试         | 完成时间   |
+| :---:       | :---:      | :---:                        | :---:        | :---:      |
+| IsrafilCore | HTTPClient | 自定义header发送GET/POST请求 | test-network | 2016-05-28 |
+| IsrafilCore | QQ音乐     | 搜索歌曲获得下载链接         | test-qqmusic | 2016-06-02 |
+| HTTPAPI     | 网易云音乐 | 搜索歌曲获得下载链接         | -            | 2016-04-15 |
+| HTTPAPI     | QQ音乐     | 搜索歌曲获得下载链接         | -            | 2016-04-15 |
 
 | 项目        | 协议       | 功能                                               | 完成情况 |
 | :---:       | :---:      | :---:                                              | :---:    |
