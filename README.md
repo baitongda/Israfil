@@ -2,8 +2,8 @@
 [![neutrino](https://img.shields.io/badge/Coded%20with-Neutrino%20IDE-brightgreen.svg?style=flat-square)](https://github.com/LER0ever/Neutrino)
 ![license](https://img.shields.io/badge/license-GPL%20V3-yellowgreen.svg?style=flat-square)
 ![israfil](https://img.shields.io/badge/LER0ever-Project%20Israfil-blue.svg?style=flat-square)
-![AP](https://img.shields.io/badge/Angels-Parliament-ff69b4.svg?style=flat-square)
-
+![AP](https://img.shields.io/badge/Angels-Parliament-ff69b4.svg?style=flat-square)  
+### **|[关于](https://github.com/LER0ever/Israfil#关于这个项目)|[当前进度](https://github.com/LER0ever/Israfil#israfil-进度)|[下载软件](https://github.com/LER0ever/Israfil#israfil下载)|[编译](https://github.com/LER0ever/Israfil#israfil编译)|[参与项目](https://github.com/LER0ever/Israfil#contributions-are-always-welcome)|[编译状态](https://github.com/LER0ever/Israfil#ci-status)|[版权](https://github.com/LER0ever/Israfil#copyright)|[协议](https://github.com/LER0ever/Israfil#license)**
 ## LER0ever Project Israfil  
 Provide Unified Music Service for users in China.  
 
@@ -45,6 +45,14 @@ _Israfil HTTP API: (./HttpAPI)独立子项目，Go语言编写，Go-Pie插件机
 | HTTPAPI     | 网易云音乐 | 搜索歌曲，获得歌曲ID列表                           | 80%          |
 | HTTPAPI     | QQ音乐     | 搜索歌曲，获得歌曲SID列表                          | 60 %         |
 | HTTPAPI     | QQ音乐     | **通过SID计算音乐文件下载路径，包括无损Flac、APE** | 100%         |
+
+## Israfil下载
+### [LER0ever/Israfil-builds](https://github.com/LER0ever/Israfil-builds)  
+- **直接点上面的链接↸↸↸，(前提是如果你完全不知道这整个页面在说什么的话，)上面的链接会带你去下载地址**
+- 注意，这个repo里的文件是本项目实时编译结果，**尚在早期开发，下下来也没什么用**  
+- Releases里的格式为“操作系统 - 编译工具链 - 版本号 - 时间戳”，如macx-clang-0.1.0.0003-115355  
+- 每次commit过后利用CI打Tag然后将Artifacts上传至Releases，Releases数量可能会较多，选择最近的二进制下载即可  
+- Windows的二进制已经被WinDeployQt撸过了，Linux 和 OS X的没有自带Qt库，Linux请用包管理安装(大多数发行版都自带了)，Mac用户再说  
 
 ## Israfil编译
 ### 准备环境
