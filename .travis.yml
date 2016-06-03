@@ -43,9 +43,6 @@ script:
     - make
     - ls -lRa .
     - mv bin Israfil
-    - if [ "${BUILD_MODE}" = release -a "${TRAVIS_OS_NAME}" = "osx"]; then zip -r Israfil.zip Israfil
-    - if [ "${BUILD_MODE}" = release -a "${TRAVIS_OS_NAME}" = "linux"]; then 7z a Israfil.zip Israfil
-
 deploy:
     provider: releases
     api_key: "7022646b188aa7ad9b00e50bf3577cad82fc955e"
