@@ -22,7 +22,7 @@ ApplicationWindow {
     }
 
     Text {
-
+        text: israfilqt.searchSong("晴天");
     }
 
 }

@@ -6,10 +6,6 @@
 
 #include <IsrafilBase/IsrafilBase.h>
 
-//{ for needed start
-#include "rapidjson/document.h"
-//} end
-
 namespace Israfil{
 namespace Base{
 

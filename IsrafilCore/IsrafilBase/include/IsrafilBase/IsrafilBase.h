@@ -9,8 +9,6 @@
 #include "strfmt.h"
 #include "utils.h"
 
-typedef std::vector<Israfil::SongBase::Song> SongList;
-
 namespace Israfil{
 namespace Base{
 

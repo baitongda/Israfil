@@ -3,11 +3,14 @@
 
 #include <string>
 #include <vector>
+
 using std::string;
 using std::vector;
 
+
 namespace Israfil{
 namespace SongBase{
+
 
 #define srcNetease 1
 #define srcQQMusic 2
@@ -25,21 +28,27 @@ struct Album{
     string aName;
     string aID;
     string aPicURL;
-    Musician aSinger;
+    //Musician aSinger;
 };
 
 struct Song{
     string sName;
     string sID;
+    string uID; //Israfil Universal Song ID;
     vector<Musician> sSingers;
     Album sAlbum;
     int sSource;
     bool sOnly;
-    vector<string> Mp3URL; //Mp3URL[0] is the highest bitrate
-    vector<string> PicURL;
-    vector<string> LyricsURL;
-    string DevString;
+    vector<string> sMp3URLs; //Mp3URL[0] is the highest bitrate
+    //vector<string> sLLURL; //Lossless Audio URL.
+    vector<string> sPicURLs;
+    vector<string> sLyricsURLs;
+    string sDevString;
 };
+
+typedef std::vector<Israfil::SongBase::Song> SongList;
+
+string SongListToJson(SongList inSL);
 
 }
 }

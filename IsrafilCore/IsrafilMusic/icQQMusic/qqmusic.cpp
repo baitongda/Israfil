@@ -70,12 +70,13 @@ bool QQMusic::SearchSong(std::string name, std::vector<Song>& rVecSongBase)
         Song tmpSB;
         tmpSB.sName = FArray[FSongName];
         tmpSB.sID = FArray[FSongID];
-        tmpSB.DevString = FString;
-        tmpSB.Mp3URL.push_back(Israfil::strfmt::Format(QMHighMp3URL, tmpSB.sID));
-        tmpSB.LyricsURL.push_back(Israfil::strfmt::Format(QMLyricsURL, StringToInt(tmpSB.sID)%100, tmpSB.sID));
-        tmpSB.PicURL.push_back(Israfil::strfmt::Format(QMSongPicURL, FArray[FSongPicID].at(FArray[FSongPicID].length()-2),FArray[FSongPicID].at(FArray[FSongPicID].length()-1), FArray[FSongPicID]));
+        tmpSB.sDevString = FString;
+        tmpSB.sMp3URLs.push_back(Israfil::strfmt::Format(QMHighMp3URL, tmpSB.sID));
+        tmpSB.sLyricsURLs.push_back(Israfil::strfmt::Format(QMLyricsURL, StringToInt(tmpSB.sID)%100, tmpSB.sID));
+        tmpSB.sPicURLs.push_back(Israfil::strfmt::Format(QMSongPicURL, FArray[FSongPicID].at(FArray[FSongPicID].length()-2),FArray[FSongPicID].at(FArray[FSongPicID].length()-1), FArray[FSongPicID]));
 
         tmpSB.sSource = srcQQMusic;
+        tmpSB.uID = Israfil::strfmt::Format("{0}{1}", tmpSB.sSource, tmpSB.sID);
         tmpSB.sOnly = qlSong["only"].GetInt() == 1 ? true : false;
 
         tmpSB.sAlbum.aID = FArray[FAlbumID];
