@@ -3,7 +3,7 @@
 ![license](https://img.shields.io/badge/license-GPL%20V3-yellowgreen.svg?style=flat-square)
 ![israfil](https://img.shields.io/badge/LER0ever-Project%20Israfil-blue.svg?style=flat-square)
 ![AP](https://img.shields.io/badge/Angels-Parliament-ff69b4.svg?style=flat-square)  
-### **|[关于](https://github.com/LER0ever/Israfil#关于这个项目)|[当前进度](https://github.com/LER0ever/Israfil#israfil-进度)|[下载软件](https://github.com/LER0ever/Israfil#israfil下载)|[编译](https://github.com/LER0ever/Israfil#israfil编译)|[参与项目](https://github.com/LER0ever/Israfil#contributions-are-always-welcome)|[编译状态](https://github.com/LER0ever/Israfil#ci-status)|[版权](https://github.com/LER0ever/Israfil#copyright)|[协议](https://github.com/LER0ever/Israfil#license)|**
+### **|[关于](https://github.com/LER0ever/Israfil#关于这个项目)|[当前进度](https://github.com/LER0ever/Israfil#israfil-进度)|[开发日志](https://github.com/LER0ever/Israfil/issues/3)|[下载软件](https://github.com/LER0ever/Israfil#israfil下载)|[编译](https://github.com/LER0ever/Israfil#israfil编译)|[参与项目](https://github.com/LER0ever/Israfil#contributions-are-always-welcome)|[编译状态](https://github.com/LER0ever/Israfil#ci-status)|[版权](https://github.com/LER0ever/Israfil#copyright)|[协议](https://github.com/LER0ever/Israfil#license)|**
 ## LER0ever Project Israfil  
 Provide Unified Music Service for users in China.  
 
@@ -17,38 +17,34 @@ Project Israfil只是本人的练笔之作，为了熟悉一下Go语言和Qt的�
 ## 关于这个项目
 IsrafilCore: (./IsrafilCore)C++11编写，提供音乐服务接口给IsrafilApp, 其他程序也可以自由调用此接口，**早期开发中**  
 Israfil App: Qt, QML, Material Design, **超早期开发中**。  
-_Israfil HTTP API: (./HttpAPI)独立子项目，Go语言编写，Go-Pie插件机制，适合部署到服务器端提供统一的API **目前完成了网易和qq的搜索与下载地址获取，短期不更新**_
+_Israfil HTTP API: (./HttpAPI)独立子项目，Go语言编写，Go-Pie插件机制，适合部署到服务器端提供统一的API **目前完成了网易和qq的搜索与下载地址获取**_
 
 ## Israfil 进度  
+### **[开发日志及当前运行效果（持续更新）](https://github.com/LER0ever/Israfil/issues/3)**  
 已完成:  
 
-| 项目        | 协议       | 已完成                                   | 测试         | 完成时间   |
-| :---:       | :---:      | :---:                                    | :---:        | :---:      |
-| IsrafilCore | QQ音乐     | 整合音乐结果到Universal Search并加入Json | test-qqmusic | 2016-06-04 |
-| IsrafilCore | Universal  | SongList搜索结果重编码为Json供qml调用    | test-qqmusic | 2016-06-04 |
-| Israfil     | 持续集成   | 完成全自动化编译+上传二进制文件          | -            | 2016-06-03 |
-| IsrafilCore | Universal  | 封装QQ搜索至IsrafilCore                  | test-core    | 2016-06-02 |
-| IsrafilCore | QQ音乐     | 获得歌曲歌词和专辑图片                   | test-qqmusic | 2016-06-02 |
-| IsrafilCore | QQ音乐     | 搜索歌曲获得下载链接                     | test-qqmusic | 2016-06-02 |
-| IsrafilCore | HTTPClient | 自定义header发送GET/POST请求             | test-network | 2016-05-28 |
-| HTTPAPI     | 网易云音乐 | 搜索歌曲获得下载链接                     | -            | 2016-04-15 |
-| HTTPAPI     | QQ音乐     | 搜索歌曲获得下载链接                     | -            | 2016-04-15 |
+| 项目        | 协议       | 已完成                                      | 测试         | 完成时间   |
+| :---:       | :---:      | :---:                                       | :---:        | :---:      |
+| IsrafilCore | QQ音乐     | 整合音乐结果到Universal Search并加入Json    | test-qqmusic | 2016-06-04 |
+| IsrafilCore | Universal  | SongList搜索结果重编码为Json供qml调用       | test-qqmusic | 2016-06-04 |
+| Israfil     | 持续集成   | 完成全自动化编译+上传二进制文件             | -            | 2016-06-03 |
+| IsrafilCore | Universal  | 封装QQ搜索至IsrafilCore                     | test-core    | 2016-06-02 |
+| IsrafilCore | QQ音乐     | 获得歌曲歌词和专辑图片                      | test-qqmusic | 2016-06-02 |
+| IsrafilCore | QQ音乐     | 搜索歌曲获得下载链接                        | test-qqmusic | 2016-06-02 |
+| IsrafilCore | HTTPClient | 自定义header发送GET/POST请求                | test-network | 2016-05-28 |
+| HTTPAPI     | 网易云音乐 | 搜索歌曲获得详细信息(歌手，歌词，曲图)      | -            | 2016-04-15 |
+| HTTPAPI     | 网易云音乐 | 搜索歌曲获得下载链接(高音质，普通音质)      | -            | 2016-04-15 |
+| HTTPAPI     | QQ音乐     | 搜索歌曲获得详细信息(歌手，歌词，曲图)      | -            | 2016-04-15 |
+| HTTPAPI     | QQ音乐     | 搜索歌曲获得下载链接(无损，高，普通，渣m4a) | -            | 2016-04-15 |
 进行中:  
 
-| 项目        | 协议       | 功能                                               | 完成情况 |
-| :---:       | :---:      | :---:                                              | :---:    |
-| IsrafilApp  | Qml<->C++  | C++ 和 QML之间的caodan通讯 :(                      | 30%      |
-| IsrafilCore | 网易云音乐 | 搜索歌曲                                           | 30%      |
-| IsrafilCore | 虾米音乐   | 协议研究                                           | 60%      |
-| IsrafilAPP  | UI         | qml-material 初步界面demo 及 qml文件的资源打包     | 60%      |
-| HTTPAPI     | Universal  | **已经可以搜索网易和QQ音乐的详细信息**             | 100%     |
-| HTTPAPI     | 网易云音乐 | 通过歌曲ID获得各个清晰度的DFSID                    | 100%     |
-| HTTPAPI     | 网易云音乐 | 通过歌曲ID获取歌手信息，头像，歌手ID               | 100%     |
-| HTTPAPI     | 网易云音乐 | 通过歌曲ID，获取专辑信息，图片，ID                 | 100%     |
-| HTTPAPI     | 网易云音乐 | **通过歌曲DFSID计算出各个清晰度MP3绝对链接地址**   | 100%     |
-| HTTPAPI     | 网易云音乐 | 搜索歌曲，获得歌曲ID列表                           | 100%     |
-| HTTPAPI     | QQ音乐     | 搜索歌曲，获得歌曲SID列表                          | 100 %    |
-| HTTPAPI     | QQ音乐     | **通过SID计算音乐文件下载路径，包括无损Flac、APE** | 100%     |
+| 项目        | 协议       | 功能                                                                                        | 完成情况 | 开始时间   |
+| :---:       | :---:      | :---:                                                                                       | :---:    | :---:      |
+| IsrafilApp  | UI         | Qml-Material 界面设计，可能需要手动维护一份[Fork](https://github.com/LER0ever/qml-material) | 30%      | 2016-06-05 |
+| IsrafilApp  | Qml<->C++  | C++ 和 QML之间的caodan通讯 :(                                                               | 30%      | 2016-06-04 |
+| IsrafilCore | 网易云音乐 | 搜索歌曲                                                                                    | 30%      | 2016-05-28 |
+| IsrafilCore | 虾米音乐   | 协议研究                                                                                    | 60%      | 2016-05-28 |
+| IsrafilAPP  | UI         | qml-material 初步界面demo 及 qml文件的资源打包                                              | 60%      | 2016-05-13 |
 
 ## Israfil下载
 ### [LER0ever/Israfil-builds](https://github.com/LER0ever/Israfil-builds)  
@@ -84,7 +80,7 @@ See [contribute.md](https://github.com/LER0ever/Israfil/blob/develop/doc/contrib
 | Android  | 5.5 gcc androideabi | ![shield](https://img.shields.io/badge/build-unknown-lightgrey.svg?style=flat-square)       |
 
 ## Copyright
-| 3rd party            | License | Sub-Project | in source            |
+| 3rd party            | License | Needed by   | in source            |
 | :---:                | :---:   | :---:       | :---:                |
 | papyros/qml-material | LGPL2   | IsrafilApp  | Embedded in source   |
 | Qt Project           | LGPL2   | IsrafilApp  | Universal Dependency |
@@ -94,6 +90,7 @@ See [contribute.md](https://github.com/LER0ever/Israfil/blob/develop/doc/contrib
 
 网易云音乐API参考了[网易云音乐API分析](https://github.com/yanunon/NeteaseCloudMusic/wiki/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90API%E5%88%86%E6%9E%90)  
 网易云音乐新版API正在学习中...  
+Israfil中的歌曲和歌单版权归各大音乐平台所有  
 
 ### LICENSE
 GNU GENERAL PUBLIC LICENSE V3  

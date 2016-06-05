@@ -14,7 +14,7 @@ class IsrafilCoreQt : public QObject
     Q_OBJECT
 public:
     explicit IsrafilCoreQt(QObject *parent = 0);
-    Q_INVOKABLE SongList searchSong(QString Name);
+    Q_INVOKABLE QString searchSong(QString Name);
 private:
     Israfil::Core::IsrafilCore *pIC;
 signals:

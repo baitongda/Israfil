@@ -4,25 +4,25 @@ import IsrafilCore 1.0
 
 ApplicationWindow {
     visible: true;
-    width: 400;
-    height: 400;
+    width: 800;
+    height: 500;
 
     Text {
         font.family: 'Droid Sans';
-        font.pointSize: 32;
-        lineHeight: 2;
+        font.pointSize: 12;
+        lineHeight: 1;
         horizontalAlignment: Text.AlignHCenter;
         verticalAlignment: Text.AlignVCenter;
-        text: 'Stay Tuned!';
+        wrapMode: Text.WrapAnywhere;
+        text: israfilqt.searchSong("晴天");
         anchors.centerIn: parent;
+        height: parent.height;
+        width: parent.width;
     }
 
     IsrafilCoreQt {
         id: israfilqt
     }
 
-    Text {
-        text: israfilqt.searchSong("晴天");
-    }
 
 }

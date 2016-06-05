@@ -17,11 +17,9 @@ INCLUDEPATH += \
 
 
 SOURCES += \
-    source/Fibonacci.cpp \
     source/IsrafilCore.cpp
 
 HEADERS += \
-    include/IsrafilCore/Fibonacci.h \
     include/IsrafilCore/IsrafilCore.h
 
 LIBS += -L$$BUILD_TREE/bin -lcurlcpp -lcurl -lIsrafilBase -lIsrafilNetwork -licQQMusic

@@ -1,12 +1,15 @@
 #include "israfilcoreqt.h"
+#include <string>
 
 IsrafilCoreQt::IsrafilCoreQt(QObject *parent) : QObject(parent)
 {
     pIC = new Israfil::Core::IsrafilCore();
 }
 
-SongList IsrafilCoreQt::searchSong(QString Name)
+QString IsrafilCoreQt::searchSong(QString Name)
 {
-    return pIC->SearchSong(Name.toStdString());
+    std::string strRet = Israfil::SongBase::SongListToJson(pIC->SearchSong(Name.toStdString()));
+    QString qRet = QString(QString::fromStdString(strRet));
+    return qRet;
 }
 
