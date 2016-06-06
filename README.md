@@ -21,10 +21,12 @@ _Israfil HTTP API: (./HttpAPI)独立子项目，Go语言编写，Go-Pie插件机
 
 ## Israfil 进度  
 ### **[开发日志及当前运行效果（持续更新）](https://github.com/LER0ever/Israfil/issues/3)**  
+### [当前代码量统计](https://github.com/LER0ever/Israfil/blob/develop/doc/cloc.md)  
 已完成:  
 
 | 项目        | 协议       | 已完成                                      | 测试         | 完成时间   |
 | :---:       | :---:      | :---:                                       | :---:        | :---:      |
+| Israfil     | 代码规范   | 用Google Code Style格式化了整个项目         | -            | 2016-06-04 |
 | IsrafilCore | QQ音乐     | 整合音乐结果到Universal Search并加入Json    | test-qqmusic | 2016-06-04 |
 | IsrafilCore | Universal  | SongList搜索结果重编码为Json供qml调用       | test-qqmusic | 2016-06-04 |
 | Israfil     | 持续集成   | 完成全自动化编译+上传二进制文件             | -            | 2016-06-03 |
@@ -36,13 +38,13 @@ _Israfil HTTP API: (./HttpAPI)独立子项目，Go语言编写，Go-Pie插件机
 | HTTPAPI     | 网易云音乐 | 搜索歌曲获得下载链接(高音质，普通音质)      | -            | 2016-04-15 |
 | HTTPAPI     | QQ音乐     | 搜索歌曲获得详细信息(歌手，歌词，曲图)      | -            | 2016-04-15 |
 | HTTPAPI     | QQ音乐     | 搜索歌曲获得下载链接(无损，高，普通，渣m4a) | -            | 2016-04-15 |
-进行中:  
+进行中(按优先级排列):  
 
 | 项目        | 协议       | 功能                                                                                        | 完成情况 | 开始时间   |
 | :---:       | :---:      | :---:                                                                                       | :---:    | :---:      |
+| IsrafilCore | 网易云音乐 | 搜索歌曲                                                                                    | 30%      | 2016-05-28 |
 | IsrafilApp  | UI         | Qml-Material 界面设计，可能需要手动维护一份[Fork](https://github.com/LER0ever/qml-material) | 30%      | 2016-06-05 |
 | IsrafilApp  | Qml<->C++  | C++ 和 QML之间的caodan通讯 :(                                                               | 30%      | 2016-06-04 |
-| IsrafilCore | 网易云音乐 | 搜索歌曲                                                                                    | 30%      | 2016-05-28 |
 | IsrafilCore | 虾米音乐   | 协议研究                                                                                    | 60%      | 2016-05-28 |
 | IsrafilAPP  | UI         | qml-material 初步界面demo 及 qml文件的资源打包                                              | 60%      | 2016-05-13 |
 

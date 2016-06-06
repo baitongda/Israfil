@@ -40,6 +40,7 @@ build_script:
 # - del /q Makefile
  - ren bin Israfil
  - cd Israfil
+ - xcopy ..\..\curl*\lib\libcurl.dll . /e
  - windeployqt IsrafilApp.exe --qmldir C:\Qt\5.5\mingw492_32\qml
 # - windeployqt test-json.exe --qmldir C:\Qt\5.5\mingw492_32\qml
 # - windeployqt test-qqmusic.exe --qmldir C:\Qt\5.5\mingw492_32\qml

@@ -22,35 +22,37 @@ using curl::curl_header;
 using curl::curl_easy_exception;
 using curl::curlcpp_traceback;
 
-namespace Israfil{
-namespace Network{
+namespace Israfil {
+namespace Network {
+typedef std::pair<string, string>postparam;
+typedef std::vector<postparam>   postparams;
 
-typedef std::pair<string, string> postparam;
-typedef std::vector<postparam> postparams;
+class ISRAFILCORE_API HttpClient {
+public:
 
-class ISRAFILCORE_API HttpClient
-{
-	public:
+  void   printInfo();
+  void   addHeader(string strHeader);
 
-		void printInfo();
-		void addHeader(string strHeader);
-		//bool addCookie(string strCookie);
-		void clearHeader();
-		//void initClient();
-		string HttpGet(string url);
-		string HttpPost(string url, string data);
+  // bool addCookie(string strCookie);
+  void   clearHeader();
 
-		//curl_easy curleasy;
-	private:
-		curl_header header;
+  // void initClient();
+  string HttpGet(string url);
+  string HttpPost(string url,
+                  string data);
 
+  // curl_easy curleasy;
+
+private:
+
+  curl_header header;
 };
+
 /**
-*  @brief
-*    Print information about the library to the console
-*/
-//ISRAFILNETWORK_API void printInfo();
+ *  @brief
+ *    Print information about the library to the console
+ */
 
-
+// ISRAFILNETWORK_API void printInfo();
 } // namespace Network
 } // namespace Israfil

@@ -9,15 +9,12 @@
 #include "strfmt.h"
 #include "utils.h"
 
-namespace Israfil{
-namespace Base{
-
-
+namespace Israfil {
+namespace Base {
 /**
-*  @brief
-*    Print information about the library to the console
-*/
+ *  @brief
+ *    Print information about the library to the console
+ */
 ISRAFILCORE_API void printInfo();
-
 } // namespace baselib
 } // namespace Israfil

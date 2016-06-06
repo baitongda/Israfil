@@ -9,14 +9,18 @@
 #include <QObject>
 #include <IsrafilCore/IsrafilCore.h>
 
-class IsrafilCoreQt : public QObject
-{
-    Q_OBJECT
+class IsrafilCoreQt : public QObject {
+  Q_OBJECT
+
 public:
-    explicit IsrafilCoreQt(QObject *parent = 0);
-    Q_INVOKABLE QString searchSong(QString Name);
+
+  explicit IsrafilCoreQt(QObject *parent = 0);
+  Q_INVOKABLE QString searchSong(QString Name);
+
 private:
-    Israfil::Core::IsrafilCore *pIC;
+
+  Israfil::Core::IsrafilCore *pIC;
+
 signals:
 
 public slots:

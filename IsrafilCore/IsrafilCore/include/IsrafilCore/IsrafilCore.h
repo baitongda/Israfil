@@ -10,19 +10,18 @@
 #include <IsrafilNetwork/IsrafilNetwork.h>
 #include <qqmusic.h>
 
-namespace Israfil{
-namespace Core{
-
-class ISRAFILCORE_API IsrafilCore
-{
+namespace Israfil {
+namespace Core {
+class ISRAFILCORE_API IsrafilCore {
 public:
-    IsrafilCore();
-    SongList SearchSong(std::string strName);
+
+  IsrafilCore();
+  SongList SearchSong(std::string strName);
+
 private:
-    Israfil::QQMusic::QQMusic *pQM;
+
+  Israfil::QQMusic::QQMusic *pQM;
 };
-
-
 } // namespace Core
 } // namespace Israfil
 
