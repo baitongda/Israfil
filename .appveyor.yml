@@ -13,7 +13,7 @@ build_script:
  - 'echo Downloading Slibcurl ...'
  - appveyor DownloadFile https://curl.haxx.se/download/curl-7.49.1.zip -FileName curl.zip
  - 7z x curl.zip
- - cd curl*
+ - cd curl-7.49.1
  - dir
 # - md build
 # - cd build
@@ -21,6 +21,7 @@ build_script:
  - mingw32-make mingw32
  - xcopy include C:\Qt\5.5\mingw492_32\include /e
  - xcopy lib\libcurl.dll C:\Qt\5.5\mingw492_32\lib /e
+ - xcopy lib\libcurl.dll ..\ /e
  - cd ../
  - md build-mingw
  - cd build-mingw
@@ -40,7 +41,7 @@ build_script:
 # - del /q Makefile
  - ren bin Israfil
  - cd Israfil
- - xcopy ..\..\curl*\lib\libcurl.dll . /e
+ - xcopy ..\..\libcurl.dll .
  - windeployqt IsrafilApp.exe --qmldir C:\Qt\5.5\mingw492_32\qml
 # - windeployqt test-json.exe --qmldir C:\Qt\5.5\mingw492_32\qml
 # - windeployqt test-qqmusic.exe --qmldir C:\Qt\5.5\mingw492_32\qml
