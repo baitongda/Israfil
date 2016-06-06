@@ -1,8 +1,8 @@
 TEMPLATE = subdirs
 SUBDIRS += \
     ext/curlcpp \
-    IsrafilNetwork \
     IsrafilBase \
+    IsrafilNetwork \
     IsrafilMusic \
     IsrafilCore \
 

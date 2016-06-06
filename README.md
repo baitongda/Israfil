@@ -24,20 +24,20 @@ _Israfil HTTP API: (./HttpAPI)独立子项目，Go语言编写，Go-Pie插件机
 ### [当前代码量统计](https://github.com/LER0ever/Israfil/blob/develop/doc/cloc.md)  
 已完成:  
 
-| 项目        | 协议       | 已完成                                      | 测试         | 完成时间   |
-| :---:       | :---:      | :---:                                       | :---:        | :---:      |
-| Israfil     | 代码规范   | 用Google Code Style格式化了整个项目         | -            | 2016-06-04 |
-| IsrafilCore | QQ音乐     | 整合音乐结果到Universal Search并加入Json    | test-qqmusic | 2016-06-04 |
-| IsrafilCore | Universal  | SongList搜索结果重编码为Json供qml调用       | test-qqmusic | 2016-06-04 |
-| Israfil     | 持续集成   | 完成全自动化编译+上传二进制文件             | -            | 2016-06-03 |
-| IsrafilCore | Universal  | 封装QQ搜索至IsrafilCore                     | test-core    | 2016-06-02 |
-| IsrafilCore | QQ音乐     | 获得歌曲歌词和专辑图片                      | test-qqmusic | 2016-06-02 |
-| IsrafilCore | QQ音乐     | 搜索歌曲获得下载链接                        | test-qqmusic | 2016-06-02 |
-| IsrafilCore | HTTPClient | 自定义header发送GET/POST请求                | test-network | 2016-05-28 |
-| HTTPAPI     | 网易云音乐 | 搜索歌曲获得详细信息(歌手，歌词，曲图)      | -            | 2016-04-15 |
-| HTTPAPI     | 网易云音乐 | 搜索歌曲获得下载链接(高音质，普通音质)      | -            | 2016-04-15 |
-| HTTPAPI     | QQ音乐     | 搜索歌曲获得详细信息(歌手，歌词，曲图)      | -            | 2016-04-15 |
-| HTTPAPI     | QQ音乐     | 搜索歌曲获得下载链接(无损，高，普通，渣m4a) | -            | 2016-04-15 |
+| 项目        | 协议       | 已完成                                            | 测试         | 完成时间   |
+| :---:       | :---:      | :---:                                             | :---:        | :---:      |
+| IsrafilCore | HTTPClient | 自定义header进行HTTP POST, 初步的网易搜索获得json | test-network | 2016-06-04 |
+| IsrafilCore | QQ音乐     | 整合音乐结果到Universal Search并加入Json          | test-qqmusic | 2016-06-04 |
+| IsrafilCore | Universal  | SongList搜索结果重编码为Json供qml调用             | test-qqmusic | 2016-06-04 |
+| Israfil     | 持续集成   | 完成全自动化编译+上传二进制文件                   | -            | 2016-06-03 |
+| IsrafilCore | Universal  | 封装QQ搜索至IsrafilCore                           | test-core    | 2016-06-02 |
+| IsrafilCore | QQ音乐     | 获得歌曲歌词和专辑图片                            | test-qqmusic | 2016-06-02 |
+| IsrafilCore | QQ音乐     | 搜索歌曲获得下载链接                              | test-qqmusic | 2016-06-02 |
+| IsrafilCore | HTTPClient | 自定义header发送GET请求                           | test-network | 2016-05-28 |
+| HTTPAPI     | 网易云音乐 | 搜索歌曲获得详细信息(歌手，歌词，曲图)            | -            | 2016-04-15 |
+| HTTPAPI     | 网易云音乐 | 搜索歌曲获得下载链接(高音质，普通音质)            | -            | 2016-04-15 |
+| HTTPAPI     | QQ音乐     | 搜索歌曲获得详细信息(歌手，歌词，曲图)            | -            | 2016-04-15 |
+| HTTPAPI     | QQ音乐     | 搜索歌曲获得下载链接(无损，高，普通，渣m4a)       | -            | 2016-04-15 |
 进行中(按优先级排列):  
 
 | 项目        | 协议       | 功能                                                                                        | 完成情况 | 开始时间   |

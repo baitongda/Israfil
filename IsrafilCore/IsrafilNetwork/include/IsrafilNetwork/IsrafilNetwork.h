@@ -38,6 +38,8 @@ public:
 
   // void initClient();
   string HttpGet(string url);
+  string HttpPost(string      url,
+                  postparams& data);
   string HttpPost(string url,
                   string data);
 

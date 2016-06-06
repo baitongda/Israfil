@@ -8,6 +8,7 @@ DESTDIR = $$BUILD_TREE/bin
 INCLUDEPATH += \
     include \
     $$SOURCE_TREE/IsrafilCore/IsrafilPrefix \
+    $$SOURCE_TREE/IsrafilCore/IsrafilBase/include \
     $$SOURCE_TREE/IsrafilCore/ext/curlcpp/include
 
 SOURCES += \
@@ -16,4 +17,4 @@ SOURCES += \
 HEADERS += \
     include/IsrafilNetwork/IsrafilNetwork.h
 
-LIBS += -lcurl -L$$BUILD_TREE/bin -lcurlcpp
+LIBS += -lcurl -L$$BUILD_TREE/bin -lcurlcpp -lIsrafilBase

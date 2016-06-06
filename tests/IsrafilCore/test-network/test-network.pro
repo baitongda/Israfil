@@ -12,4 +12,4 @@ INCLUDEPATH += \
     ../../../IsrafilCore/IsrafilPrefix \
     ../../../IsrafilCore/ext/curlcpp/include
 
-LIBS += -L$$BUILD_TREE/bin -lcurl -lcurlcpp -lIsrafilNetwork
+LIBS += -L$$BUILD_TREE/bin -lcurl -lcurlcpp -lIsrafilNetwork -lIsrafilBase
