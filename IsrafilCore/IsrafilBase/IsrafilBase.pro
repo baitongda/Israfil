@@ -13,11 +13,15 @@ INCLUDEPATH += \
 SOURCES += \
     source/IsrafilBase.cpp \
     source/utils.cpp \
-    source/songbase.cpp
+    source/songbase.cpp \
+    source/crypto.cpp \
+    source/md5.cpp
 
 HEADERS += \
     include/IsrafilBase/IsrafilBase.h \
     include/IsrafilBase/songbase.h \
     include/IsrafilBase/strfmt.h \
-    include/IsrafilBase/utils.h
+    include/IsrafilBase/utils.h \
+    include/IsrafilBase/crypto.h \
+    include/IsrafilBase/md5.h
 

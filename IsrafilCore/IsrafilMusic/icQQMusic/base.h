@@ -1,3 +1,5 @@
+#ifndef BASE_H
+#define BASE_H
 #include <string>
 
 namespace Israfil {
@@ -30,3 +32,4 @@ const string QMLyricsURL     = "http://music.qq.com/miniportal/static/lyric/{0}/
 #define DEBUG 1
 }
 }
+#endif // ifndef BASE_H

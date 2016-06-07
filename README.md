@@ -87,6 +87,7 @@ See [contribute.md](https://github.com/LER0ever/Israfil/blob/develop/doc/contrib
 | papyros/qml-material | LGPL2   | IsrafilApp  | Embedded in source   |
 | Qt Project           | LGPL2   | IsrafilApp  | Universal Dependency |
 | JosephP91/curlcpp    | MIT     | IsrafilCore | Embedded in source   |
+| JieweiWei/md5        | Apache  | IsrafilCore | Embedded in source   |
 | natefinch/pie        | MIT     | HttpAPI     | Embedded in source   |
 | ddliu/go-httpclient  | MIT     | HttpAPI     | Need manual go get   |
 

@@ -8,6 +8,10 @@
 #include "songbase.h"
 #include "strfmt.h"
 #include "utils.h"
+#include "crypto.h"
+
+
+using std::string;
 
 namespace Israfil {
 namespace Base {

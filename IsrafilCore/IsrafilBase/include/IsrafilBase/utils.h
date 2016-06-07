@@ -7,7 +7,7 @@
 
 namespace Israfil {
 namespace Base {
-#define ISRAFILDBG
+#define ISRAFILDBGSILENT
 
 #ifdef ISRAFILDBG
 # define dbg(x) std::cout \

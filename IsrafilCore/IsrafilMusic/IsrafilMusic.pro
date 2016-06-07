@@ -1,2 +1,3 @@
 TEMPLATE = subdirs
-SUBDIRS += icQQMusic
+SUBDIRS += icQQMusic \
+    icNetease
