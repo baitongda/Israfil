@@ -42,11 +42,11 @@ TEST_CASE("Israfil::Network Basic Tests", "HttpClient") {
 
     /*postparams pp;
 
-    pp.push_back(std::pair<string, string>("s", "Westlife"));
-    pp.push_back(std::pair<string, string>("limit", "10"));
-    pp.push_back(std::pair<string, string>("type", "1"));
-    pp.push_back(std::pair<string, string>("offset", "0"));
-    std::cout << hc->HttpPost("http://localhost:9001", pp);*/
-    std::cout<<hc->HttpPost("http://music.163.com/api/search/get/","s=盛世回首&limit=20&type=1&offset=0") << std::endl;
+       pp.push_back(std::pair<string, string>("s", "Westlife"));
+       pp.push_back(std::pair<string, string>("limit", "10"));
+       pp.push_back(std::pair<string, string>("type", "1"));
+       pp.push_back(std::pair<string, string>("offset", "0"));
+       std::cout << hc->HttpPost("http://localhost:9001", pp);*/
+    std::cout << hc->HttpPost("http://music.163.com/api/search/get/", "s=盛世回首&limit=20&type=1&offset=0") << std::endl;
   }
 }

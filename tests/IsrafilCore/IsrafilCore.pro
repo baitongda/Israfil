@@ -4,4 +4,5 @@ SUBDIRS += \
     test-json \
     test-qqmusic \
     test-core \
-    test-netease
+    test-netease \
+    test-search
